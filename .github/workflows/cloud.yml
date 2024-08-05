@@ -36,7 +36,7 @@ jobs:
         echo "CONFIG_HAVE_KPROBES=y" >> arch/arm64/configs/vendor/bengal-perf_defconfig
         echo "CONFIG_KPROBE_EVENTS=y" >> arch/arm64/configs/vendor/bengal-perf_defconfig
 
-        git clone https://github.com/tiann/KernelSU
+        git https://github.com/tiann/KernelSU/tree/v0.9.5
         cd KernelSU
         git stash && git pull
         cd ../
